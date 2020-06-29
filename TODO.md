@@ -16,71 +16,33 @@ graphics/UX tasks, `category:code` for code tasks, and
 
 ### Artwork
 
-#### New graphics needed
-
-* A bonus block that acts as on/off switch
-
-  - design proposal 1: featuring the [on/off symbols](https://www.shutterstock.com/image-illustration/electric-switch-icon-cartoon-illustration-web-579423751),
-    a rollover animation between the states would be nice to have as well (cube tilting/rolling backwards)
-
-  - design proposal 2: use the [powerswitch symbol](https://de.depositphotos.com/152581468/stock-illustration-power-switch-icon.html) instead and just have it grey'ish when off and bright red when on
-
 #### Old graphics in need for cleanup/replacement
 
-These graphics need to be cleaned up or replaced with better looking
-ones. Style and color scheme should be kept more or less the same.
+##### Backgrounds that need re-doing
+
+* The entire block_snow folder should be removed, seems very placeholder quality
+
+  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/block_snow/block-snow-background.png)
+
+* Looks very flat, needs redo (not often used, could wait)
+
+  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/antarctic/semi_arctic.jpg)
+
+* Most of the forest backgrounds look too flat/simplistic, could certainly do with a redo
+
+(All the backgrounds in the BlueRock_Forest folder, most of the ones in the forest folder)
+
+  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/BlueRock_Forest/blue-middle.jpg)
+
+* The background water layer in "Over the Frozen Bridge" should be replaced with actual water instead of tinted snow tiles
+
+  ![](https://user-images.githubusercontent.com/22513909/86016421-17fb5800-ba66-11ea-8095-9bd5e4d040e9.png)
 
 * In need of a little cleanup:
 
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/arcticskies1.png)
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/bluemountain-middle.png)
+  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/arcticskies/arcticskies1.png)
 
-* Don't match the style that well, could need a bit of smoothing:
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/bridgecloud-light.png)
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/background/bridgecloud-dark.png)
-
-* Regular stone block, currently lacking detail.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/blocks/block10.png)
-
-* Regular stone block, currently lacking detail.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/blocks/block11.png)
-
-* One trampoline is portable, the other is stationary. They should
-  look more simialr, while still being distinguishable. Maybe make
-  more use of vertical space for more springyness.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/objects/trampoline/trampoline1-0.png) ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/objects/trampoline/trampoline2-0.png)
-
-* These blocks are iced up versions of bigblock.png, block5.png and Co. (however they are not slippery ice, maybe they should?!)
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/blocks/icebridge.png)
-
-* Too black in spots and sloppy boarders. Not enough detail.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/engine/menu/frame.png)
-
-* Graphics is screwed up with vertical lines going through it.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/background/cloud.png)
-
-* Placeholder gfx, actual background tileset needs to be more complex. Maybe not worth the effort, background graphics are simpler.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/background/snow-para-1.png)
-
-* Placeholder gfx, actual background tileset needs to be more complex. Maybe not worth the effort, background graphics are simpler.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/background/snow-para-2.png)
-
-* Flame could make use of animation (tiles are barely used, so not high priority)
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/background/backgroundtile3.png)
-
-* Needs to be converted into a decal or completely replaced with a different kind of end sequence.
-
-  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/goal/goal2-1.png)
+##### Tiles
 
 * Some issues with tileability.
 
@@ -98,11 +60,18 @@ ones. Style and color scheme should be kept more or less the same.
   ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/pole/bend.png)
   ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/tiles/pole/t-cross.png)
 
+##### Miscellaneous
+
+* Too black in spots and sloppy boarders. Not enough detail.
+
+  ![](https://raw.githubusercontent.com/SuperTux/supertux/master/data/images/engine/menu/frame.png)
+
 #### Cutscenes
 
-- [ ] Intro: Picnic with Penny
-  - [x] Make it look less like a level
-  - [ ] Fix some minor issues with new version
+##### [ ] Intro: Picnic with Penny
+
+General improvements needed, both Penny and Nolok are near inanimate, see [here](https://forum.freegamedev.net/viewtopic.php?f=68&t=12902) for potential improvement idea
+
 - [ ] Antarctica part II
   - [ ] Interlude: Yeti
   - [ ] Interlude: Where is Penny?
@@ -110,8 +79,6 @@ ones. Style and color scheme should be kept more or less the same.
 
 #### Graphics
 
-- [ ] Sliding (Tux)
-- [ ] Swimming (Tux)
 
 ##### Tiles
 
@@ -166,7 +133,7 @@ ones. Style and color scheme should be kept more or less the same.
 - [ ] Sliding
 - [ ] Swimming
   - [x] Basic code for moving in water tiles
-  - [ ] How to move underwater?
+  - [x] How to move underwater?
   - [ ] Discuss: fluid simulation as game object rather than tiles?
 - [ ] Coin: expose to scripting interface for path/movement settings
 - [ ] HeavyCoin: expose to scripting interface to enable/disable effect of gravity
